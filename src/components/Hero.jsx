@@ -15,9 +15,9 @@ import { useRef } from "react";
 // import line1 from "../assets/line1.svg";
 // import line2 from "../assets/line2.svg";
 // import line3 from "../assets/line3.svg";
-import Line1 from "../components/Line1";
-import Line2 from "../components/Line2";
-import Line3 from "../components/Line3";
+// import Line1 from "../components/Line1";
+// import Line2 from "../components/Line2";
+// import Line3 from "../components/Line3";
 
 
 
@@ -76,7 +76,7 @@ const Hero = () => {
 
   return (
     <section className="relative py-4 w-screen bg-norse">
-    <div>
+    {/* <div>
     <div className="hero-primary-arrow hero-primary-arrow--first scale-50 lg:scale-100 absolute z-20 top-0 md:left-20">
       <Line1 />
     </div>
@@ -86,7 +86,7 @@ const Hero = () => {
     <div className="scale-0 lg:scale-100 hero-primary-arrow hero-primary-arrow--third absolute z-20 right-10 top-[40%] hidden md:block">
       <Line3 />
     </div>
-    </div>
+    </div> */}
       <div className="flex items-center justify-center w-full h-screen">
         <div className="md:mx-auto px-6 block md:hidden">
           <div ref={lottie1}>
