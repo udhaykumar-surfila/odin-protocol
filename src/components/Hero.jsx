@@ -7,7 +7,7 @@ import { TypewriterEffect } from "./TypeWriterEffect";
 // import logo from "../assets/logo.png";
 import animationData from "../assets/animation/odin.json"
 import animationData2 from "../assets/animation/odin2.json"
-import Lottie, { LottieRefCurrentProps } from "react-lottie";
+import Lottie from "react-lottie";
 import inner from "../assets/inner.svg";
 import outer from "../assets/outer.svg";
 import LogoBlur from '../components/LogoBlur'
@@ -19,6 +19,9 @@ import { useRef } from "react";
 const Hero = () => {
   const lottie1 = useRef();
   const lottie2 = useRef();
+
+  const lottiem1 = useRef();
+  const lottiem2 = useRef();
 
   const defaultOptions = {
     loop: false,
@@ -35,7 +38,9 @@ const Hero = () => {
       callback: (e) => {
         console.log("complete", e);
         lottie1.current.style.display = "none";
+        lottiem1.current.style.display = "none";
         lottie2.current.style.display = "block";
+        lottiem2.current.style.display = "block";
 
       },
     },
@@ -66,8 +71,28 @@ const Hero = () => {
   return (
     <section className="relative py-4 w-screen">
       <div className="flex items-center justify-center w-full h-screen">
-        <div className="md:mx-auto px-6">
+        <div className="md:mx-auto px-6 block md:hidden">
           <div ref={lottie1}>
+            <Lottie options={defaultOptions}
+              height={160}
+              width={350}
+              isStopped={false}
+              isPaused={false}
+              eventListeners={EventListner}
+            />
+          </div>
+          <div ref={lottie2} className="hidden">
+            <Lottie options={loopOptions}
+              height={160}
+              width={350}
+              isStopped={false}
+              isPaused={false}
+              
+            />
+          </div>
+        </div>
+        <div className="md:mx-auto px-6 hidden md:block">
+          <div ref={lottiem1}>
             <Lottie options={defaultOptions}
               height={255}
               width={550}
@@ -76,7 +101,7 @@ const Hero = () => {
               eventListeners={EventListner}
             />
           </div>
-          <div ref={lottie2} className="hidden">
+          <div ref={lottiem2} className="hidden">
             <Lottie options={loopOptions}
               height={255}
               width={550}
