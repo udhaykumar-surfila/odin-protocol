@@ -28,3 +28,9 @@
   padding: 0 !important;
   z-index: 0;
 }
+
+.bg-norse{
+  background-image: url( '/norse.svg' );
+  background-repeat: repeat;
+  background-size: 40%;
+}

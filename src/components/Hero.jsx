@@ -12,6 +12,12 @@ import inner from "../assets/inner.svg";
 import outer from "../assets/outer.svg";
 import LogoBlur from '../components/LogoBlur'
 import { useRef } from "react";
+// import line1 from "../assets/line1.svg";
+// import line2 from "../assets/line2.svg";
+// import line3 from "../assets/line3.svg";
+import Line1 from "../components/Line1";
+import Line2 from "../components/Line2";
+import Line3 from "../components/Line3";
 
 
 
@@ -69,7 +75,18 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative py-4 w-screen">
+    <section className="relative py-4 w-screen bg-norse">
+    <div>
+    <div className="hero-primary-arrow hero-primary-arrow--first scale-50 lg:scale-100 absolute z-20 top-0 md:left-20">
+      <Line1 />
+    </div>
+    <div className="hero-primary-arrow hero-primary-arrow--second scale-50 lg:scale-100 absolute z-20 top-[40%] right-0 md:right-10 md:top-2" >
+    <Line2 />
+    </div>
+    <div className="scale-0 lg:scale-100 hero-primary-arrow hero-primary-arrow--third absolute z-20 right-10 top-[40%] hidden md:block">
+      <Line3 />
+    </div>
+    </div>
       <div className="flex items-center justify-center w-full h-screen">
         <div className="md:mx-auto px-6 block md:hidden">
           <div ref={lottie1}>
@@ -121,7 +138,7 @@ const Hero = () => {
       > */}
       <div className="md:pr-4 mx-auto max-w-7xl px-6">
         <div className="flex justify-center max-w-6xl min-h-[60vh] mx-auto ">
-          <div className="flex flex-col justify-center w-screen max-w-6xl min-h-[60vh] mx-auto md:w-1/2 md:mr-6">
+          <div className="flex flex-col justify-center w-screen max-w-6xl md:min-h-[60vh] mx-auto md:w-1/2 md:mr-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-left text-zinc-700 font-bold dark:text-zinc-100 ">
               P2P trading protocol on lighting network for trading&nbsp;
               <TypewriterEffect
