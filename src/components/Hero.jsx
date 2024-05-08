@@ -140,7 +140,7 @@ const Hero = () => {
         <div className="flex justify-center max-w-6xl min-h-[60vh] mx-auto ">
           <div className="flex flex-col justify-center w-screen max-w-6xl md:min-h-[60vh] mx-auto md:w-1/2 md:mr-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-left text-zinc-700 font-bold dark:text-zinc-100 ">
-              P2P trading protocol on lighting network for trading&nbsp;
+              P2P trading protocol on lightning network for trading&nbsp;
               <TypewriterEffect
                 words={words}
                 loop={true}
