@@ -216,7 +216,7 @@ const Hero = () => {
                         </div> */}
           {/* </div> */}
         </div>
-        <div className="absolute hidden md:block md:bottom-0 md:left-[60vw] xl:left-[70vw]" >
+        <div className="absolute hidden md:block md:bottom-[-17%] md:left-[60vw] " >
           <LogoBlur className="absolute" />
         </div>
       </div>
