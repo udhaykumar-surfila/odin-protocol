@@ -139,7 +139,7 @@ const Hero = () => {
       <div className="md:pr-4 mx-auto max-w-7xl px-6">
         <div className="flex justify-center max-w-6xl min-h-[60vh] mx-auto ">
           <div className="flex flex-col justify-center w-screen max-w-6xl md:min-h-[60vh] mx-auto md:w-1/2 md:mr-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-left text-zinc-700 font-bold dark:text-zinc-100 ">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-left font-bold text-zinc-100 ">
               P2P trading protocol on lightning network for trading&nbsp;
               <TypewriterEffect
                 words={words}
@@ -150,7 +150,7 @@ const Hero = () => {
             </h2>
             {/* <p className="mt-6 relative font-regular text-sm sm:text-xl text-zinc-500 text-left">Copy paste the most trending components and use them in your websites without having to worry about styling and animations.</p> */}
             <div className="flex pt-10 justify-start">
-              <a href="#" className="bg-slate-900 dark:bg-white dark:text-black no-underline flex space-x-2 group cursor-pointer relative hover:shadow-2xl transition duration-200 shadow-zinc-900 p-px font-semibold text-white px-4 py-2 w-full sm:w-52 h-14 rounded-2xl text-sm text-center items-center justify-center">Whitepaper</a>
+              <a href="#" className="bg-white text-black no-underline flex space-x-2 group cursor-pointer relative hover:shadow-2xl transition duration-200 shadow-zinc-900 p-px font-semibold  px-4 py-2 w-full sm:w-52 h-14 rounded-2xl text-sm text-center items-center justify-center">Whitepaper</a>
               {/* <a href="#" className="ml-8 w-full sm:w-52 text-sm text-black bg-white dark:bg-black h-14 border border-transparent  dark:text-white dark:border-white flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">Enter App</a> */}
             </div>
             {/* <div className="flex pt-10 justify-start">
