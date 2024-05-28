@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>referral</title>
+<style>
+  h1, p, div, .text-center {
+    text-align: center;
+  }
+
+  img {
+    padding: 35px;
+  }
+
+  .contact-email {
+    font-weight: bold;
+    color: rgb(51, 155, 240);
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(51, 155, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+<script>
+    function copyReferralIdAndRedirect() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var referralId = urlParams.get('referralId');
+        if (referralId) {
+            navigator.clipboard.writeText(referralId)
+                .then(function() {
+                    console.log('ReferralId copied to clipboard: ' + referralId);
+                    // Redirect after copying the referralId
+                    redirectToStore();
+                })
+                .catch(function(error) {
+                    console.error('Unable to copy referralId: ', error);
+                });
+        }
+    }
+
+    function redirectToStore() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps";
+        } else if (/iPad|iPhone|iPod/i.test(userAgent)) {
+            window.location.href = "https://apps.apple.com/app";
+        } else {
+            // Redirect to Dollie app for other OS
+            window.location.href = "https://dollie.app";
+        }
+    }
+</script>
+</head>
+<body>
+
+<h1>DOLLIE</h1>
+
+<p>💰 Start trading smarter today! Use your referral to download the Dollie app and unlock exciting bonuses and features</p>
+<p>Click the below button to copy your ReferralId and Download</p>
+<div class="text-center">
+  <button onclick="copyReferralIdAndRedirect()">Download the Dollie App</button>
+</div>
+
+<!--Centered Image Start-->
+<div style="text-align: center;">
+  <img width="400" src="https://framerusercontent.com/images/uanRtduYzvATGaoiXChqLDaaDHo.png">
+</div>
+<!--Centered Image End-->
+
+<p style="text-align: center;">For more information or if you have any questions, please contact Customer Support at<br><span class="contact-email">contactus@mantasolutions.xyz</span></p>
+
+</body>
+</html>

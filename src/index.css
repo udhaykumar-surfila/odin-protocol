@@ -30,7 +30,98 @@
 }
 
 .bg-norse{
-  background-image: url( '/norse.svg' );
+  background-image: url( '/norse-bright.svg' );
   background-repeat: repeat;
   background-size: 40%;
+  background-color: rgba(0, 0, 0, 0.9); 
+  background-blend-mode: darken; 
 }
+
+/* .bg-norse::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  background-image: url('/norse-bright.svg');
+  background-repeat: repeat;
+  background-size: 40%;
+  background-position: center bottom;
+  clip-path: circle(100px at center center);
+  animation: flashlight 5000ms infinite;
+}
+
+@-moz-keyframes flashlight {
+  0%, 9% {
+    opacity: 0;
+    clip-path: circle(100px at 45% 10%);
+  }
+  10%, 15%, 85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(100px at 60% 20%);
+  }
+  54%, 100% {
+    clip-path: circle(100px at 55% 92%);
+  }
+  88%, 100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flashlight {
+  0%, 9% {
+    opacity: 0;
+    clip-path: circle(100px at 45% 10%);
+  }
+  10%, 15%, 85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(100px at 60% 20%);
+  }
+  54%, 100% {
+    clip-path: circle(100px at 55% 92%);
+  }
+  88%, 100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes flashlight {
+  0%, 9% {
+    opacity: 0;
+    clip-path: circle(100px at 45% 10%);
+  }
+  10%, 15%, 85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(100px at 60% 20%);
+  }
+  54%, 100% {
+    clip-path: circle(100px at 55% 92%);
+  }
+  88%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes flashlight {
+  0%, 9% {
+    opacity: 0;
+    clip-path: circle(100px at 45% 10%);
+  }
+  10%, 15%, 85% {
+    opacity: 1;
+  }
+  50% {
+    clip-path: circle(100px at 60% 20%);
+  }
+  54%, 100% {
+    clip-path: circle(100px at 55% 92%);
+  }
+  88%, 100% {
+    opacity: 0;
+  }
+} */
