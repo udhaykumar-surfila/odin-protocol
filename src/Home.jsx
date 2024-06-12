@@ -2,12 +2,12 @@ import "./Home.css";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import {
-   Feature1,
-   Feature2,
-   GridFour,
+   // Feature1,
+   // Feature2,
+   // GridFour,
    GridLayout,
-   GridThree,
-   TextBlock,
+   // GridThree,
+   // TextBlock,
 } from "./components/Feature";
 import Footer from "./components/footer";
 
@@ -16,12 +16,12 @@ function Home() {
       <>
          <Nav />
          <Hero />
-         <Feature1 />
-         <Feature2 />
+         {/* <Feature1 /> */}
+         {/* <Feature2 /> */}
          <GridLayout />
-         <TextBlock />
+         {/* <TextBlock />
          <GridThree />
-         <GridFour />
+         <GridFour /> */}
          <Footer />
       </>
    );

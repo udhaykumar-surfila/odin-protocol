@@ -10,7 +10,7 @@ import animationData2 from "../assets/animation/odin2.json"
 import Lottie from "react-lottie";
 // import inner from "../assets/inner.svg";
 // import outer from "../assets/outer.svg";
-import LogoBlur from '../components/LogoBlur'
+// import LogoBlur from '../components/LogoBlur'
 import { useEffect, useRef, useState } from "react";
 import SingleBlur from "./SingleBlur";
 // import line1 from "../assets/line1.svg";
@@ -308,9 +308,9 @@ const Hero = () => {
                         </div> */}
           {/* </div> */}
         </div>
-        <div className="absolute hidden md:block md:bottom-[-17%] md:left-[60vw] " >
+        {/* <div className="absolute hidden md:block md:bottom-[-17%] md:left-[60vw] " >
           <LogoBlur className="absolute" />
-        </div>
+        </div> */}
       </div>
       {/* </Vortex> */}
     </section>

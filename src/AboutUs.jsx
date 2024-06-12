@@ -1,5 +1,7 @@
+import './AboutUs.css'
 import Nav from './components/Nav'
 import Team from './components/Team'
+
 const AboutUs = () => {
     return (
         <>

@@ -39,7 +39,7 @@ function Nav() {
                     <div className="hidden md:flex md:items-center md:justify-end md:space-x-12">
                         <a href="/aboutus" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> About Us</a>
 
-                        {/* <a href="/whitepaper" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> Whitepaper </a> */}
+                        <a href="./bitcoin.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> Whitepaper </a>
 
                     </div>
 
@@ -62,7 +62,7 @@ function Nav() {
                             <div className="grid gap-y-6">
                                 <a href="/aboutus" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> About Us</a>
 
-                                {/* <a href="/whitepaper" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> Whitepaper </a> */}
+                                <a href="./bitcoin.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> Whitepaper </a>
 
 
                                 {/* <a

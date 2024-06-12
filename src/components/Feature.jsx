@@ -280,44 +280,38 @@ const GridLayout = () => {
    const gridData = [
       {
          id: 1,
-         title: "Layers with Bitcoin Finality",
+         title: "Bitcoin Security",
          description:
-            "We build the user ecosystem for layers with Bitcoin finality.",
+            "Protocol Underpinned by Bitcoin security.",
       },
       {
          id: 2,
-         title: "Decentralised Perpetual Exchange",
+         title: "Lightning-Fast Fxecution",
          description:
-            "Trade your favorite cryptocurrencies with 20x leverage, ensuring unparalleled security and control with your own keys.",
+            "Trade Bitcoin-based assets in off-chain lightning channels with fast executions.",
       },
       {
          id: 3,
-         title: "Secure and Decentralized Trading",
+         title: "Cheap Transaction Cost",
          description:
-            "Experience unmatched security and privacy with peer-to-peer transactions powered by blockchain technology.",
+            "Experience Low fee environment of lightning network.",
       },
       {
          id: 4,
-         title: "Decentralised Trading Platform",
+         title: "P2P Trading",
          description:
-            "Experience unmatched security and privacy with peer-to-peer transactions powered by blockchain technology.",
+            "Publish Trades on a decentralized order book and Trade Peer to Peer.",
       },
       {
          id: 5,
-         title: "Decentralised Trading Platform",
+         title: "Non-Custodial",
          description:
-            "Experience unmatched security and privacy with peer-to-peer transactions powered by blockchain technology.",
-      },
-      {
-         id: 6,
-         title: "Decentralised Trading Platform",
-         description:
-            "Experience unmatched security and privacy with peer-to-peer transactions powered by blockchain technology.",
+            "Be in full control of your assets throughout the trading process.",
       },
    ];
    return (
       <section className='pt-20 pb-10'>
-         <div className='container max-w-[1048px] mx-auto p-6 rounded-lg bg-gradient-to-br from-[#26262f] to-[#030304]'>
+         <div className='container mx-auto p-6 rounded-lg bg-gradient-to-br from-[#26262f] to-[#030304]'>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                {gridData?.map((item, idx) => {
                   return (
@@ -350,7 +344,7 @@ const GridLayout = () => {
                                           {item.description}
                                        </p>
                                     </div>
-                                    <div className=''>vijay</div>
+                                    <div className=''></div>
                                  </div>
                               </>
                            ) : (
