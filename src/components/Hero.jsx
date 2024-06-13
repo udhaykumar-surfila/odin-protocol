@@ -155,13 +155,13 @@ const Hero = () => {
     {/* <CircleLight /> */}
       {/* <NorseBg /> */}
       <div>
-        <div className="absolute top-0 left-1/4 w-[15%]" style={{ transform: `scale(${scale1})`, transformOrigin: 'center', transition: 'transform 2s' }} ref={highlight1}>
+        <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale1})`, transformOrigin: 'center', transition: 'transform 2s' }} ref={highlight1}>
           <SingleBlur />
         </div>
-        <div className="absolute top-0 left-1/4 w-[15%]" style={{ transform: `scale(${scale2})`, transformOrigin: 'center', transition: 'transform 3s' }} ref={highlight2}>
+        <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale2})`, transformOrigin: 'center', transition: 'transform 3s' }} ref={highlight2}>
           <SingleBlur />
         </div>
-        <div className="absolute top-0 left-1/4 w-[15%]" style={{ transform: `scale(${scale3})`, transformOrigin: 'center', transition: 'transform 2.5s' }} ref={highlight3}>
+        <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale3})`, transformOrigin: 'center', transition: 'transform 2.5s' }} ref={highlight3}>
           <SingleBlur />
         </div>
         {/* <div className="absolute top-0 right-1/4 w-[15%]" ref={highlight1}>
@@ -179,7 +179,7 @@ const Hero = () => {
           <Line3 />
         </div>
       </div> */}
-      <div className="flex items-center justify-center w-full h-screen bright">
+      <div className="flex items-center justify-center w-full h-[70vh] md:h-screen bright">
         <div className="md:mx-auto px-6 block md:hidden">
           <div ref={lottie1}>
             <Lottie options={defaultOptions}
@@ -229,7 +229,7 @@ const Hero = () => {
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       > */}
       <div className="md:pr-4 mx-auto max-w-7xl px-6">
-        <div className="flex justify-center max-w-6xl min-h-[60vh] mx-auto ">
+        <div className="flex justify-center max-w-6xl sm:min-h-[30vh] md:min-h-[60vh] mx-auto ">
           <div className="flex flex-col justify-center w-screen max-w-6xl md:min-h-[60vh] mx-auto md:w-1/2 md:mr-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-left font-bold text-zinc-100 ">
             P2P Protocol For Trading <span className="bg-gradient-to-r from-[#714EFF] via-[#8b6df5] to-[#a28bf0] text-transparent dark:text-transparent bg-clip-text dark:bg-clip-text">Runes</span> On Lightning Network&nbsp;

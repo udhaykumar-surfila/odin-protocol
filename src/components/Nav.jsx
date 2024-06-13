@@ -2,22 +2,22 @@
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import inner from "../assets/inner.svg";
-import outer from "../assets/outer.svg";
-import SingleBlur from './SingleBlur';
+// import inner from "../assets/inner.svg";
+// import outer from "../assets/outer.svg";
+// import SingleBlur from './SingleBlur';
 import logo from "../assets/logo.svg";
 
 function Nav() {
     const [expanded, setExpanded] = useState(false);
     return (
         <section className="relative py-4 sm:py-6" >
-            <div className="absolute top-[-300%] transform -translate-x-1/2 left-1/2 w-full block md:hidden">
+            {/* <div className="absolute top-[-300%] transform -translate-x-1/2 left-1/2 w-full block md:hidden">
                 <SingleBlur />
             </div>
             <div className="absolute top-[-400%] right-0 block md:hidden">
                 <img src={inner} alt="lightning" className="w-full" />
                 <img src={outer} alt="lightning" id="outer" className="w-full absolute top-0" />
-            </div>
+            </div> */}
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 
                 <nav className="flex items-center justify-between">
@@ -39,7 +39,7 @@ function Nav() {
                     <div className="hidden md:flex md:items-center md:justify-end md:space-x-12">
                         <a href="/aboutus" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> About Us</a>
 
-                        <a href="./bitcoin.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> Whitepaper </a>
+                        <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> Whitepaper </a>
 
                     </div>
 
@@ -62,7 +62,7 @@ function Nav() {
                             <div className="grid gap-y-6">
                                 <a href="/aboutus" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> About Us</a>
 
-                                <a href="./bitcoin.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> Whitepaper </a>
+                                <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> Whitepaper </a>
 
 
                                 {/* <a

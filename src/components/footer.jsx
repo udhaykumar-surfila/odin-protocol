@@ -14,7 +14,7 @@ const Footer = () => {
             <nav className="flex items-center justify-center space-x-6 sm:space-x-16 xl:space-x-20">
                 <a href="/aboutus" title="" className="text-base font-medium text-gray-100 transition-all duration-200 hover:-translate-y-1 hover:text-white"> About Us </a>
 
-                <a href="./bitcoin.pdf" title="" className="text-base font-medium text-gray-100 transition-all duration-200 hover:-translate-y-1 hover:text-white"> White Paper </a>
+                <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-100 transition-all duration-200 hover:-translate-y-1 hover:text-white"> White Paper </a>
 
                 {/* <a href="#" title="" className="text-base font-medium text-gray-100 transition-all duration-200 hover:-translate-y-1 hover:text-white"> App </a> */}
 

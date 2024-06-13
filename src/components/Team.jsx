@@ -38,7 +38,7 @@ const Team = () => {
                             <p className="mt-6 text-lg font-semibold text-white text-center">Taras</p>
                             <p className="mt-1 text-base font-normal text-gray-400 text-center">CTO & Co-Founder</p>
                             <div className="flex justify-center mt-1">
-                                <SocialIcon url="https://x.com/hashmaster4" target="_blank" fgColor="#fff" bgColor="#242424" className="small-social-icons inline-flex items-center justify-center w-4 h-4 text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-blue-600" />
+                                <SocialIcon url="https://linkedin.com/in/taras-emelyanenko-97055047/" target="_blank" fgColor="#fff" bgColor="#242424" className="small-social-icons inline-flex items-center justify-center w-4 h-4 text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-blue-600" />
                             </div>
                         </div>
 

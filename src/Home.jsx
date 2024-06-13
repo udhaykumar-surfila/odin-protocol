@@ -5,7 +5,7 @@ import {
    // Feature1,
    // Feature2,
    // GridFour,
-   GridLayout,
+   // GridLayout,
    // GridThree,
    // TextBlock,
 } from "./components/Feature";
@@ -18,7 +18,7 @@ function Home() {
          <Hero />
          {/* <Feature1 /> */}
          {/* <Feature2 /> */}
-         <GridLayout />
+         {/* <GridLayout /> */}
          {/* <TextBlock />
          <GridThree />
          <GridFour /> */}
