@@ -332,14 +332,14 @@ const GridLayout = () => {
       },
       {
          id: 2,
-         title: "Lightning-Fast Fxecution",
+         title: "Lightning-Fast Execution",
          class: "lighning-illustration",
          description:
             "Trade Bitcoin-based assets in off-chain lightning channels with fast executions.",
       },
       {
          id: 3,
-         title: "Cheap Transaction Cost",
+         title: "Low Transaction Costs",
          class: "low-fees",
          description:
             "Experience Low fee environment of lightning network.",

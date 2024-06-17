@@ -6,6 +6,23 @@ function isValidateEmail(email) {
 
 function submitEmail(email) {
     console.log(email);
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe9h2VSn8eNoxqA9KcHm16r8wvAAfSAkm57ipXBGFE7Lq4sWw/formResponse';
+
+    const postData = new URLSearchParams();
+    postData.append('entry.1125349051', email); // Adjust 'entry.1125349051' based on the entry id from your form
+
+    fetch(googleFormUrl, {
+        method: 'POST',
+        body: postData
+    }).then(response => {
+        if (response.ok) {
+            console.log('Form submitted successfully');
+        } else {
+            console.error('Error submitting form');
+        }
+    }).catch(error => {
+        console.error('Error:', error);
+    });
 }
 
 const Waitlist = () => {
