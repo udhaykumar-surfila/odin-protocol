@@ -162,3 +162,28 @@
   background-position: top right;
   background-size: 30%, 100%;
 }
+
+
+/* mobile version sizes */
+@media (max-width: 768px) {
+
+  .bitcoin-security{
+    background-size: 50%, 100%;
+  }
+
+  .lighning-illustration{
+    background-size: 60%, 100%;
+  }
+
+  .low-fees{
+    background-size: 50%, 100%;
+  }
+
+  .non-custodial{
+    background-size: 50%, 100%;
+  }
+
+  .p2p{
+    background-size: 50%, 100%;
+  }
+}
