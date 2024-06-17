@@ -37,22 +37,17 @@
   background-blend-mode: darken; 
 }
 
-/* .bg-norse::after{
+.bg-norse::after {
   content: '';
+  position: absolute;
+  top: -25vh;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #111;
-  background-image: url('/norse-bright.svg');
-  background-repeat: repeat;
-  background-size: 40%;
-  background-position: center bottom;
-  clip-path: circle(100px at center center);
-  animation: flashlight 5000ms infinite;
+  background: radial-gradient(circle, rgba(134, 108, 241, 0.1) 0%, rgba(255, 255, 255, 0) 50%);
+  pointer-events: none;
 }
-
+/* 
 @-moz-keyframes flashlight {
   0%, 9% {
     opacity: 0;
@@ -125,3 +120,45 @@
     opacity: 0;
   }
 } */
+
+
+.corner-blur {
+  background-image: url('/BG GLOW.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.bitcoin-security{
+  background-image: url('/bitcoin-security.png'), url('/BG GLOW.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 38%, 100%;
+}
+
+.lighning-illustration{
+  background-image: url('/Lightning-Illustration.png'), url('/BG GLOW.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50%, 100%;
+}
+
+.low-fees{
+  background-image: url('/Low Cost Illustration.png'), url('/BG GLOW.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 20%, 100%;
+}
+
+.non-custodial{
+  background-image: url('/Non-Custodial Illustration.png'), url('/BG GLOW.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 38%, 100%;
+}
+
+.p2p{
+  background-image: url('/P2P Illustration.png'), url('/BG GLOW.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30%, 100%;
+}

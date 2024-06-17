@@ -11,8 +11,8 @@ import Lottie from "react-lottie";
 // import inner from "../assets/inner.svg";
 // import outer from "../assets/outer.svg";
 // import LogoBlur from '../components/LogoBlur'
-import { useEffect, useRef, useState } from "react";
-import SingleBlur from "./SingleBlur";
+import { useRef } from "react";
+// import SingleBlur from "./SingleBlur";
 // import line1 from "../assets/line1.svg";
 // import line2 from "../assets/line2.svg";
 // import line3 from "../assets/line3.svg";
@@ -31,77 +31,77 @@ const Hero = () => {
   const lottiem1 = useRef();
   const lottiem2 = useRef();
 
-  const highlight1 = useRef();
-  const highlight2 = useRef();
-  const highlight3 = useRef();
+  // const highlight1 = useRef();
+  // const highlight2 = useRef();
+  // const highlight3 = useRef();
 
-  const [scale1, setScale1] = useState(0);
-  const [scale2, setScale2] = useState(0);
-  const [scale3, setScale3] = useState(0);
+  // const [scale1, setScale1] = useState(0);
+  // const [scale2, setScale2] = useState(0);
+  // const [scale3, setScale3] = useState(0);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setScale1(prevScale => {
-        //prevScale === 1.5 ? 0 : 1.5
-        if (prevScale === 1) {
-          return 0;
-        }
-        const randomLeft1 = (Math.floor(Math.random() * 80) + 1) + "%";
-        const randomTop1 = (Math.floor(Math.random() * 30) + 1) + "%";
-        // console.log(randomLeft, randomTop);
-        if (prevScale === 0) {
-          highlight1.current.style.left = randomLeft1;
-          highlight1.current.style.top = randomTop1;
-        }
-        return 1;
-      });
-    }, 2000);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setScale1(prevScale => {
+  //       //prevScale === 1.5 ? 0 : 1.5
+  //       if (prevScale === 1) {
+  //         return 0;
+  //       }
+  //       const randomLeft1 = (Math.floor(Math.random() * 80) + 1) + "%";
+  //       const randomTop1 = (Math.floor(Math.random() * 30) + 1) + "%";
+  //       // console.log(randomLeft, randomTop);
+  //       if (prevScale === 0) {
+  //         highlight1.current.style.left = randomLeft1;
+  //         highlight1.current.style.top = randomTop1;
+  //       }
+  //       return 1;
+  //     });
+  //   }, 2000);
 
-    return () => clearTimeout(timeout);
-  }, [scale1]);
+  //   return () => clearTimeout(timeout);
+  // }, [scale1]);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setScale2(prevScale => {
-        //prevScale === 1.5 ? 0 : 1.5
-        if (prevScale === 1) {
-          return 0;
-        }
-        const randomLeft2 = (Math.floor(Math.random() * 80) + 1) + "%";
-        const randomTop2 = (Math.floor(Math.random() * 30) + 1) + "%";
-        // console.log(randomLeft, randomTop);
-        if (prevScale === 0) {
-          highlight2.current.style.left = randomLeft2;
-          highlight2.current.style.top = randomTop2;
-        }
-        return 1;
-      });
-    }, 3000);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setScale2(prevScale => {
+  //       //prevScale === 1.5 ? 0 : 1.5
+  //       if (prevScale === 1) {
+  //         return 0;
+  //       }
+  //       const randomLeft2 = (Math.floor(Math.random() * 80) + 1) + "%";
+  //       const randomTop2 = (Math.floor(Math.random() * 30) + 1) + "%";
+  //       // console.log(randomLeft, randomTop);
+  //       if (prevScale === 0) {
+  //         highlight2.current.style.left = randomLeft2;
+  //         highlight2.current.style.top = randomTop2;
+  //       }
+  //       return 1;
+  //     });
+  //   }, 3000);
 
-    return () => clearTimeout(timeout);
-  }, [scale2]);
+  //   return () => clearTimeout(timeout);
+  // }, [scale2]);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setScale3(prevScale => {
-        //prevScale === 1.5 ? 0 : 1.5
-        if (prevScale === 1) {
-          return 0;
-        }
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setScale3(prevScale => {
+  //       //prevScale === 1.5 ? 0 : 1.5
+  //       if (prevScale === 1) {
+  //         return 0;
+  //       }
         
-        const randomTop3 = (Math.floor(Math.random() * 80) + 1) + "%";
-        const randomLeft3 = (Math.floor(Math.random() * 30) + 1) + "%";
-        console.log(randomLeft3, randomTop3);
-        if (prevScale === 0) {
-          highlight3.current.style.left = randomLeft3;
-          highlight3.current.style.top = randomTop3;
-        }
-        return 1;
-      });
-    }, 2500);
+  //       const randomTop3 = (Math.floor(Math.random() * 80) + 1) + "%";
+  //       const randomLeft3 = (Math.floor(Math.random() * 30) + 1) + "%";
+  //       console.log(randomLeft3, randomTop3);
+  //       if (prevScale === 0) {
+  //         highlight3.current.style.left = randomLeft3;
+  //         highlight3.current.style.top = randomTop3;
+  //       }
+  //       return 1;
+  //     });
+  //   }, 2500);
 
-    return () => clearTimeout(timeout);
-  }, [scale3]);
+  //   return () => clearTimeout(timeout);
+  // }, [scale3]);
 
   // useEffect(() => {
   //   setInterval(() => {
@@ -155,15 +155,15 @@ const Hero = () => {
     {/* <CircleLight /> */}
       {/* <NorseBg /> */}
       <div>
-        <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale1})`, transformOrigin: 'center', transition: 'transform 2s' }} ref={highlight1}>
+        {/* <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale1})`, transformOrigin: 'center', transition: 'transform 2s' }} ref={highlight1}>
           <SingleBlur />
-        </div>
-        <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale2})`, transformOrigin: 'center', transition: 'transform 3s' }} ref={highlight2}>
+        </div> */}
+        {/* <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale2})`, transformOrigin: 'center', transition: 'transform 3s' }} ref={highlight2}>
           <SingleBlur />
         </div>
         <div className="absolute top-0 left-1/4 w-[200px]" style={{ transform: `scale(${scale3})`, transformOrigin: 'center', transition: 'transform 2.5s' }} ref={highlight3}>
           <SingleBlur />
-        </div>
+        </div> */}
         {/* <div className="absolute top-0 right-1/4 w-[15%]" ref={highlight1}>
           <SingleBlur />
         </div> */}
@@ -229,27 +229,14 @@ const Hero = () => {
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       > */}
       <div className="md:pr-4 mx-auto max-w-7xl px-6">
-        <div className="flex justify-center max-w-6xl sm:min-h-[30vh] md:min-h-[60vh] mx-auto ">
-          <div className="flex flex-col justify-center w-screen max-w-6xl md:min-h-[60vh] mx-auto md:w-1/2 md:mr-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-left font-bold text-zinc-100 ">
-            P2P Protocol For Trading <span className="bg-gradient-to-r from-[#714EFF] via-[#8b6df5] to-[#a28bf0] text-transparent dark:text-transparent bg-clip-text dark:bg-clip-text">Runes</span> On Lightning Network&nbsp;
-              {/* <TypewriterEffect
-                words={words}
-                loop={true}
-                cursorClassName="invisible"
-                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-left inline-block bg-gradient-to-r from-[#714EFF] via-[#8b6df5] to-[#a28bf0] text-transparent dark:text-transparent bg-clip-text dark:bg-clip-text"
-              /> */}
+        <div className="flex justify-center max-w-6xl sm:min-h-[30vh] md:min-h-[30vh] mx-auto ">
+          <div className="flex flex-col justify-center w-screen max-w-6xl md:min-h-[30vh] mx-auto md:w-2/3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-zinc-100 text-center">
+            P2P Protocol For Trading <span className="text-[#8b6df5] dark:text-[#8b6df5] bg-clip-text dark:bg-clip-text">Runes</span> <br/> On Lightning Network&nbsp;
+              
             </h2>
-            {/* <p className="mt-6 relative font-regular text-sm sm:text-xl text-zinc-500 text-left">Copy paste the most trending components and use them in your websites without having to worry about styling and animations.</p> */}
-            <div className="flex pt-10 justify-start">
-              {/* <a href="#" className="bg-white text-black no-underline flex space-x-2 group cursor-pointer relative hover:shadow-2xl transition duration-200 shadow-zinc-900 p-px font-semibold  px-4 py-2 w-full sm:w-52 h-14 rounded-2xl text-sm text-center items-center justify-center">Whitepaper</a> */}
-              {/* <a href="#" className="ml-8 w-full sm:w-52 text-sm text-black bg-white dark:bg-black h-14 border border-transparent  dark:text-white dark:border-white flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">Enter App</a> */}
-            </div>
-            {/* <div className="flex pt-10 justify-start">
-              <img src={logos} alt="lightning" className="" />
-            </div> */}
           </div>
-          <div className="hidden lg:flex flex-col justify-center align-center max-w-6xl min-h-[60vh] mx-auto w-1/2 ">
+          {/* <div className="hidden lg:flex flex-col justify-center align-center max-w-6xl min-h-[60vh] mx-auto w-1/2 "> */}
             {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 max-w-7xl mx-auto w-full"> */}
             {/* <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
@@ -298,7 +285,7 @@ const Hero = () => {
               <img src={outer} alt="lightning" id="outer" className="w-full absolute top-0" />
             </div> */}
             {/* </div> */}
-          </div>
+          {/* </div> */}
           {/* <div className="w-full  text-white"> */}
           {/* <HeroLogo /> */}
 
@@ -308,6 +295,7 @@ const Hero = () => {
                         </div> */}
           {/* </div> */}
         </div>
+        
         {/* <div className="absolute hidden md:block md:bottom-[-17%] md:left-[60vw] " >
           <LogoBlur className="absolute" />
         </div> */}

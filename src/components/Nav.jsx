@@ -43,15 +43,15 @@ function Nav() {
 
                     </div>
 
-                    <div className="hidden w-[105px] md:flex">
-                        {/* <a
-                        href="#"
+                    <div className="hidden md:flex">
+                        <a
+                        href="#waitlist"
                         title=""
-                        className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white transition-all duration-200 bg-gray-800 border border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hover:bg-gray-700"
+                        className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white transition-all duration-200 bg-[#714EFF] border border-[#714EFF] rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hover:bg-[#5F3BFF]"
                         role="button"
                     >
-                        Open Dapp
-                    </a> */}
+                        Join Waitlist
+                    </a>
                         <span ></span>
                     </div>
                 </nav>
@@ -65,14 +65,14 @@ function Nav() {
                                 <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> Whitepaper </a>
 
 
-                                {/* <a
-                            href="#"
+                                <a
+                            href="#waitlist"
                             title=""
-                            className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white transition-all duration-200 bg-gray-800 border border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hover:bg-gray-700"
+                            className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white transition-all duration-200 bg-[#714EFF] border border-[#714EFF] rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hover:bg-[#5F3BFF]"
                             role="button"
                         >
-                            Open Dapp
-                        </a> */}
+                            Join Waitlist
+                        </a>
                             </div>
                         </div>
                     </nav>

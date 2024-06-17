@@ -5,11 +5,12 @@ import {
    // Feature1,
    // Feature2,
    // GridFour,
-   // GridLayout,
+   GridLayout,
    // GridThree,
    // TextBlock,
 } from "./components/Feature";
 import Footer from "./components/footer";
+import Waitlist from "./components/Waitlist"; 
 
 function Home() {
    return (
@@ -18,10 +19,11 @@ function Home() {
          <Hero />
          {/* <Feature1 /> */}
          {/* <Feature2 /> */}
-         {/* <GridLayout /> */}
+         <GridLayout />
          {/* <TextBlock />
          <GridThree />
          <GridFour /> */}
+         <Waitlist />
          <Footer />
       </>
    );

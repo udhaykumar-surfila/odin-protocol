@@ -5,6 +5,7 @@ import { GlobeDemo } from "./GlobeComp";
 import animationData from "../assets/animation/bitlight.json";
 import Lottie from "react-lottie";
 import { ArrowRightAlt, Biotech, Money, Security } from "@mui/icons-material";
+import { FeatureIcon1 } from "./FeatureIcon";
 
 const Feature1 = () => {
    const [isShowing, setIsShowing] = useState(false);
@@ -276,58 +277,108 @@ const Feature3 = () => {
    );
 };
 
+const GridBlur = () => {
+   return (
+     <svg
+       xmlns="http://www.w3.org/2000/svg"
+       width="398"
+       height="343"
+       fill="none"
+       viewBox="0 0 398 343"
+     >
+       <g filter="url(#filter0_f_2032_1362)" opacity="0.7">
+         <circle
+           cx="345.245"
+           cy="42.796"
+           r="122.146"
+           fill="#714EFF"
+           fillOpacity="0.5"
+         ></circle>
+       </g>
+       <defs>
+         <filter
+           id="filter0_f_2032_1362"
+           width="689.492"
+           height="689.492"
+           x="0.499"
+           y="-301.95"
+           colorInterpolationFilters="sRGB"
+           filterUnits="userSpaceOnUse"
+         >
+           <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
+           <feBlend
+             in="SourceGraphic"
+             in2="BackgroundImageFix"
+             result="shape"
+           ></feBlend>
+           <feGaussianBlur
+             result="effect1_foregroundBlur_2032_1362"
+             stdDeviation="111.3"
+           ></feGaussianBlur>
+         </filter>
+       </defs>
+     </svg>
+   );
+ }
+
 const GridLayout = () => {
    const gridData = [
       {
          id: 1,
          title: "Bitcoin Security",
+         class: "bitcoin-security",
          description:
             "Protocol Underpinned by Bitcoin security.",
       },
       {
          id: 2,
          title: "Lightning-Fast Fxecution",
+         class: "lighning-illustration",
          description:
             "Trade Bitcoin-based assets in off-chain lightning channels with fast executions.",
       },
       {
          id: 3,
          title: "Cheap Transaction Cost",
+         class: "low-fees",
          description:
             "Experience Low fee environment of lightning network.",
       },
       {
          id: 4,
          title: "P2P Trading",
+         class: "p2p",
          description:
             "Publish Trades on a decentralized order book and Trade Peer to Peer.",
       },
       {
          id: 5,
          title: "Non-Custodial",
+         class: "non-custodial",
          description:
             "Be in full control of your assets throughout the trading process.",
       },
    ];
    return (
       <section className='pt-20 pb-10'>
-         <div className='container mx-auto p-6 rounded-lg bg-gradient-to-br from-[#26262f] to-[#030304]'>
+         <div className='container mx-auto p-6 rounded-lg bg-black'>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                {gridData?.map((item, idx) => {
                   return (
                      <>
                         <div
                            className={
-                              "border border-[#8b6df5] p-6 rounded-xl " +
+                              "border border-[#f8f6ff] p-6 rounded-xl corner-blur " + item.class +
                               (idx === 2 || idx === 5
-                                 ? "col-span-1 lg:col-span-2 py-16"
-                                 : "col-span-1") +
+                                 ? " col-span-1 lg:col-span-2 py-16"
+                                 : " col-span-1") +
                               (idx !== 2 || idx !== 5 ? " row-span-2" : "")
                            }
                            key={idx}
                         >
                            {idx === 2 || idx === 5 ? (
                               <>
+                                 <div className='h-48 md:h-0'></div>
                                  <div className=' flex flex-col lg:flex-row justify-between gap-3'>
                                     <div
                                        className={
@@ -344,7 +395,6 @@ const GridLayout = () => {
                                           {item.description}
                                        </p>
                                     </div>
-                                    <div className=''></div>
                                  </div>
                               </>
                            ) : (
@@ -616,4 +666,5 @@ export {
    TextBlock,
    GridThree,
    GridFour,
+   GridBlur,
 };
