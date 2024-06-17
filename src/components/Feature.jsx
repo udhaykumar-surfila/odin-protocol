@@ -5,7 +5,7 @@ import { GlobeDemo } from "./GlobeComp";
 import animationData from "../assets/animation/bitlight.json";
 import Lottie from "react-lottie";
 import { ArrowRightAlt, Biotech, Money, Security } from "@mui/icons-material";
-import { FeatureIcon1 } from "./FeatureIcon";
+// import { FeatureIcon1 } from "./FeatureIcon";
 
 const Feature1 = () => {
    const [isShowing, setIsShowing] = useState(false);
