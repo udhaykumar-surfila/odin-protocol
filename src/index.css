@@ -187,3 +187,13 @@
     background-size: 50%, 100%;
   }
 }
+
+
+.waitlist-success {
+  transform: scale(0);
+  transition: transform ease-out 0.5s;
+}
+
+.waitlist-success.is-success {
+  transform: scale(1);
+}
