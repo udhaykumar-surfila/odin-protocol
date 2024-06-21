@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import CheckIcon from '@mui/icons-material/Check';
 
 function isValidateEmail(email) {
@@ -8,10 +8,20 @@ function isValidateEmail(email) {
 
 
 const Waitlist = () => {
+    
     const [email, setEmail] = useState("");
     const emailRef = useRef(null);
     const buttonRef = useRef(null);
     const [isSubmitted, setIsSubmitted] = useState(false);
+
+    useEffect(() => {
+        // get id from URL
+        const id = window.location.hash.replace('#', '')
+        if (id){
+            document.querySelector(`#${id}`).scrollIntoView({ behavior: 'smooth' })
+        }
+      
+      }, [])
 
 
     function submitEmail(email) {

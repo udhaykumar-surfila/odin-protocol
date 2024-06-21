@@ -1,7 +1,8 @@
 import SingleBlur from "./SingleBlur";
 import Footer from "./footer";
 import aravind from "../assets/aravind.jpg";
-import taras from "../assets/taras.jpg";
+// import taras from "../assets/taras.jpg";
+import javier from "../assets/javier.jpg";
 import { SocialIcon } from 'react-social-icons'
 
 const Team = () => {
@@ -33,12 +34,13 @@ const Team = () => {
 
                         <div>
                             <div className="flex justify-center">
-                                <img className="object-cover w-1/2 rounded-md" src={taras} alt="" />
+                                <img className="object-cover w-1/2 rounded-md" src={javier} alt="" />
                             </div>
-                            <p className="mt-6 text-lg font-semibold text-white text-center">Taras</p>
+                            <p className="mt-6 text-lg font-semibold text-white text-center">Javier Calderon Jr</p>
                             <p className="mt-1 text-base font-normal text-gray-400 text-center">CTO & Co-Founder</p>
                             <div className="flex justify-center mt-1">
-                                <SocialIcon url="https://linkedin.com/in/taras-emelyanenko-97055047/" target="_blank" fgColor="#fff" bgColor="#242424" className="small-social-icons inline-flex items-center justify-center w-4 h-4 text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-blue-600" />
+                                <SocialIcon url="https://x.com/xthemadgeniusx" target="_blank" fgColor="#fff" bgColor="#242424" className="small-social-icons inline-flex items-center justify-center w-4 h-4 text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-blue-600 mr-2" />
+                                <SocialIcon url="https://www.linkedin.com/in/xthemadgenius/" target="_blank" fgColor="#fff" bgColor="#242424" className="small-social-icons inline-flex items-center justify-center w-4 h-4 text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-blue-600" />
                             </div>
                         </div>
 

@@ -9,6 +9,18 @@ import logo from "../assets/logo.svg";
 
 function Nav() {
     const [expanded, setExpanded] = useState(false);
+
+    function GoToWaitlist() {
+        //check if the user is on the home page
+        if (window.location.pathname === "/") {
+            //scroll to the waitlist section
+            document.querySelector("#waitlist").scrollIntoView({ behavior: 'smooth' });
+            return;
+        }else{
+            window.location.href = "/#waitlist";
+        }
+    }
+
     return (
         <section className="relative py-4 sm:py-6" >
             {/* <div className="absolute top-[-300%] transform -translate-x-1/2 left-1/2 w-full block md:hidden">
@@ -39,16 +51,17 @@ function Nav() {
                     <div className="hidden md:flex md:items-center md:justify-end md:space-x-12">
                         <a href="/aboutus" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> About Us</a>
 
-                        <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> Whitepaper </a>
+                        {/* <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:white"> Whitepaper </a> */}
 
                     </div>
 
                     <div className="hidden md:flex">
                         <a
-                        href="#waitlist"
+                        // href="/#waitlist"
                         title=""
                         className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white transition-all duration-200 bg-[#714EFF] border border-[#714EFF] rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hover:bg-[#5F3BFF]"
                         role="button"
+                        onClick={GoToWaitlist}
                     >
                         Join Waitlist
                     </a>
@@ -62,14 +75,15 @@ function Nav() {
                             <div className="grid gap-y-6">
                                 <a href="/aboutus" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> About Us</a>
 
-                                <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> Whitepaper </a>
+                                {/* <a href="./ODIN-Protocol-Whitepaper.pdf" title="" className="text-base font-medium text-gray-300 transition-all duration-200 hover:text-white"> Whitepaper </a> */}
 
 
                                 <a
-                            href="#waitlist"
+                            // href="/#waitlist"
                             title=""
                             className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white transition-all duration-200 bg-[#714EFF] border border-[#714EFF] rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hover:bg-[#5F3BFF]"
                             role="button"
+                            onClick={GoToWaitlist}
                         >
                             Join Waitlist
                         </a>
