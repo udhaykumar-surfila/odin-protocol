@@ -166,11 +166,13 @@
 .bitcoin-riv{
   height: 250px !important;
     top: -10%;
+    right: -35%;
 }
 
 .p2p-riv{
-  height: 250px !important;
+  height: 230px !important;
   top: -10%;
+  right: -32%;
 }
 
 
@@ -198,15 +200,15 @@
   }
 
   .bitcoin-riv{
-    height: 200px !important;
-    width: 250px !important;
+    height: 180px !important;
+    width: 200px !important;
     right: -40%;
     top: -11%;
 }
 
 .p2p-riv{
-  height: 200px !important;
-  width: 250px !important;
+  height: 180px !important;
+  width: 200px !important;
   right: -40%;
   top: -11%;
 }
