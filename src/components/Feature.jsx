@@ -1,3 +1,4 @@
+import "./Feature.css";
 import { Transition } from "@headlessui/react";
 import { Fragment, useEffect, useState, useRef } from "react";
 // import { HeroBackgroundBlur } from './HeroBackgroundBlur'
@@ -6,6 +7,8 @@ import animationData from "../assets/animation/bitlight.json";
 import Lottie from "react-lottie";
 import { ArrowRightAlt, Biotech, Money, Security } from "@mui/icons-material";
 // import { FeatureIcon1 } from "./FeatureIcon";
+import { BitcoinRiv } from "./BitcoinRiv";
+import { P2pRiv } from "./P2pRiv";
 
 const Feature1 = () => {
    const [isShowing, setIsShowing] = useState(false);
@@ -326,7 +329,7 @@ const GridLayout = () => {
       {
          id: 1,
          title: "Bitcoin Security",
-         class: "bitcoin-security",
+         class: "",
          description:
             "Protocol Underpinned by Bitcoin security.",
       },
@@ -347,7 +350,7 @@ const GridLayout = () => {
       {
          id: 4,
          title: "P2P Trading",
-         class: "p2p",
+         class: "",
          description:
             "Publish Trades on a decentralized order book and Trade Peer to Peer.",
       },
@@ -368,7 +371,7 @@ const GridLayout = () => {
                      <>
                         <div
                            className={
-                              "border border-[#f8f6ff] p-6 rounded-xl corner-blur " + item.class +
+                              "border border-gradient p-6 rounded-xl corner-blur " + item.class +
                               (idx === 2 || idx === 5
                                  ? " col-span-1 lg:col-span-2 py-16"
                                  : " col-span-1") +
@@ -399,7 +402,10 @@ const GridLayout = () => {
                               </>
                            ) : (
                               <>
-                                 <div className='h-48'></div>
+                                 <div className='h-48'>
+                                 {idx === 0 && (<BitcoinRiv />)}
+                                 {idx === 3 && (<P2pRiv />)}
+                                 </div>
                                  <div className={"flex flex-col gap-3 "}>
                                     <h3 className={"text-xl  font-normal "}>
                                        {item.title}

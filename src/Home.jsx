@@ -11,12 +11,14 @@ import {
 } from "./components/Feature";
 import Footer from "./components/footer";
 import Waitlist from "./components/Waitlist"; 
+// import { BitcoinRiv } from "./components/BitcoinRiv";
 
 function Home() {
    return (
       <>
          <Nav />
          <Hero />
+         {/* <BitcoinRiv /> */}
          {/* <Feature1 /> */}
          {/* <Feature2 /> */}
          <GridLayout />

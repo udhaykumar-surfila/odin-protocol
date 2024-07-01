@@ -1,0 +1,8 @@
+.border-gradient{
+border-color: rgba(153, 153, 78, 0.1);
+border-width: 1px;
+border-style: solid;
+inset: 0px;
+border-radius: 10px;
+box-shadow: 0px 0px 0px 0.75px rgba(255, 255, 255, 0.1);
+}
