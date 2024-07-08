@@ -391,10 +391,10 @@ const GridLayout = () => {
                                              : "")
                                        }
                                     >
-                                       <h3 className={"text-xl  font-normal "}>
+                                       <h3 className={"text-xl  font-bold "}>
                                           {item.title}
                                        </h3>
-                                       <p className='text-base font-light '>
+                                       <p className='text-base font-normal '>
                                           {item.description}
                                        </p>
                                     </div>
@@ -403,14 +403,16 @@ const GridLayout = () => {
                            ) : (
                               <>
                                  <div className='h-48'>
+                                 <div className="animation-container">
                                  {idx === 0 && (<BitcoinRiv />)}
                                  {idx === 3 && (<P2pRiv />)}
                                  </div>
+                                 </div>
                                  <div className={"flex flex-col gap-3 "}>
-                                    <h3 className={"text-xl  font-normal "}>
+                                    <h3 className={"text-xl  font-bold  "}>
                                        {item.title}
                                     </h3>
-                                    <p className='text-base font-light '>
+                                    <p className='text-base font-normal '>
                                        {item.description}
                                     </p>
                                  </div>

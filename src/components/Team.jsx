@@ -24,8 +24,8 @@ const Team = () => {
                             <div className="flex justify-center">
                                 <img className="object-cover w-1/2 rounded-md" src={aravind} alt="" />
                             </div>
-                            <p className="mt-6 text-lg font-semibold text-white text-center">Aravind</p>
-                            <p className="mt-1 text-base font-normal text-gray-400 text-center">CEO & Co-founder</p>
+                            <p className="mt-6 text-lg font-semibold text-white text-center">Aravind Sathyanandham</p>
+                            <p className="mt-1 text-base font-normal text-gray-400 text-center">CEO & Co-Founder</p>
                             <div className="flex justify-center mt-1">
                                 <SocialIcon url="https://x.com/hashmaster4" target="_blank" fgColor="#fff" bgColor="#242424" className="small-social-icons inline-flex items-center justify-center w-4 h-4 text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-blue-600 mr-2" />
                                 <SocialIcon url="https://linkedin.com/in/s-aravind" target="_blank" fgColor="#fff" bgColor="#242424" className="small-social-icons inline-flex items-center justify-center w-4 h-4 text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-blue-600" />

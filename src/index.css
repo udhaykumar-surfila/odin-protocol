@@ -153,7 +153,7 @@
   background-image: url('/noncustodial.svg'), url('/BG GLOW.png');
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 38%, 100%;
+  background-size: 42%, 100%;
 }
 
 .p2p{
@@ -164,35 +164,55 @@
 }
 
 .bitcoin-riv{
-  height: 250px !important;
-    top: -10%;
-    right: -35%;
+  height: 400px !important;
+  top: -48%;
+  right: -45%;
 }
 
 .p2p-riv{
-  height: 230px !important;
-  top: -10%;
-  right: -32%;
+  height: 320px !important;
+  top: -24%;
+  right: -35%;
+}
+
+.animation-container{
+  position: relative;
+  width: 104%; /* Adjust as needed */
+  height: 170%; /* Adjust as needed */
+  /* border: 1px solid #fff; */
+  overflow: hidden;
+  border-radius: 10px;
+  top : -20px;
 }
 
 
 /* mobile version sizes */
 @media (max-width: 768px) {
 
+  .animation-container{
+    position: relative;
+    width: 107%; /* Adjust as needed */
+    height: 170%; /* Adjust as needed */
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    border-radius: 10px;
+    top : -20px;
+}
+
   .bitcoin-security{
     background-size: 50%, 100%;
   }
 
   .lighning-illustration{
-    background-size: 60%, 100%;
+    background-size: 70%, 100%;
   }
 
   .low-fees{
-    background-size: 50%, 100%;
+    background-size: 70%, 100%;
   }
 
   .non-custodial{
-    background-size: 50%, 100%;
+    background-size: 60%, 100%;
   }
 
   .p2p{
@@ -200,17 +220,17 @@
   }
 
   .bitcoin-riv{
-    height: 180px !important;
-    width: 200px !important;
+    height: 280px !important;
+    width: 300px !important;
     right: -40%;
-    top: -11%;
+    top: -32%;
 }
 
 .p2p-riv{
-  height: 180px !important;
-  width: 200px !important;
-  right: -40%;
-  top: -11%;
+  height: 250px !important;
+  width: 280px !important;
+  right: -35%;
+  top: -18%;
 }
 
 }
@@ -224,3 +244,9 @@
 .waitlist-success.is-success {
   transform: scale(1);
 }
+
+.lheight{
+  line-height: 65.57px !important;
+  font-weight: 800 !important;
+}
+

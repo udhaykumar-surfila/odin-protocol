@@ -231,8 +231,8 @@ const Hero = () => {
       <div className="md:pr-4 mx-auto max-w-7xl px-6">
         <div className="flex justify-center max-w-6xl sm:min-h-[30vh] md:min-h-[30vh] mx-auto ">
           <div className="flex flex-col justify-center w-screen max-w-6xl md:min-h-[30vh] mx-auto md:w-2/3">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-zinc-100 text-center">
-            P2P Protocol For Trading <span className="text-[#8b6df5] dark:text-[#8b6df5] bg-clip-text dark:bg-clip-text">Runes</span> <br/> On Lightning Network&nbsp;
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-zinc-100 text-center lheight">
+            P2P Protocol For Trading <span className="text-[#9747FF] dark:text-[#9747FF] bg-clip-text dark:bg-clip-text">Runes</span> <br/> On Lightning Network&nbsp;
               
             </h2>
           </div>
